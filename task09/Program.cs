@@ -11,15 +11,15 @@
 
 
 // Создадим функция получения случайного числа в отрезке
-int GetRandomNumberInRange (int start, int end)         // start end - задаем граничные параметры для отрезка
+int GetRandomNumberInRange (int start, int end)         // start end - задаем граничные параметры для отрезка (входный знвчения)
 {
     int resulut = 0;                                    //  вводим переменную result равную 0
     resulut = new Random().Next(start, end + 1);        //  присваиваем ее значение из отрезка (+1 для того чтобы включить последнее(последнее не включается))
-    return resulut;                                     //  выводим значение
+    return resulut;                                     //  выводим значение (выходные знвчения)
 }
 
 // Создадим функция получения наибольшего числа
-int GetMaxDigitFromNumber(int number)
+int GetMaxDigitFromNumber(int number)                   // (входный знвчения)
 {
     
     int max = number / 10;                              // выдаст первую цыфру двузначного числа. Будем считать ее максимальной
@@ -28,13 +28,13 @@ int GetMaxDigitFromNumber(int number)
     {
         max = secondDigit;
     }
-    return max;                                         //  выводим значение максимального
+    return max;                                         //  выводим значение максимального (выходные знвчения)
 }                          
 
-// создадим основную части для послудующего цикла (будем получать несколько раз значение)
+// создадим основную части для послудующего цикла (будем получать несколько раз значение) VOID - говорит о том что ничего не возвращается
 void main()
 {
-int randomNumber = GetRandomNumberInRange(10,99);       // получаем случайное число с помощью фунции GetRandomNumberInRange
+int randomNumber = GetRandomNumberInRange(10,99);       // получаем случайное число с помощью фунции GetRandomNumberInRange (вызов функции)
 int maxDigit = GetMaxDigitFromNumber(randomNumber);      // получаем  число maxDigit c помощью GetMaxDigitFromNumber, передавая randomNumber
 
 // Сделаем вывод знвчения
