@@ -28,7 +28,7 @@ return result;
 }
 
 int userNumber = getDataFromUser( "Введите А для расчета суммы от1 до А");
-int sum= int sumOfRange(1,userNumber);
+int sum= sumOfRange(1,userNumber);
 
 Console.WriteLine($"Сумма чисел от1 до {userNumber} = {sum}");
 
