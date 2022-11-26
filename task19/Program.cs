@@ -14,7 +14,6 @@ result = Convert.ToInt32(Console.ReadLine());
 return result;
 }
 
-
 int drome (int inputdata)
 {
 int number1 = inputdata /10000;
@@ -33,9 +32,8 @@ else Console.WriteLine("Нет, введеное число - не палинд�
 return inputdata;
 }
 
-
 int inputdata = getNumberFromUser("Введите пятизначное число: ");
-if  (int inputdata > 9999 && inputdata < 100000)
+if  (inputdata > 9999 && inputdata < 100000)
 {
     int data = drome(inputdata);
 }
