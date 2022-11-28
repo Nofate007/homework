@@ -3,14 +3,14 @@
 3, 5 -> 243 (3⁵)
 2, 4 -> 16
 */ 
-int getDataFromUser(string message)
+int GetDataFromUser(string message)
 {
 int result = 0;
 Console.WriteLine(message);
 result = Convert.ToInt32(Console.ReadLine());
 return result;
 }
-int vozvedeniyStepeny(int a, int b)
+int VozvedeniyStepeny(int a, int b)
 {
     int c = 1;
     int i = 1;
@@ -22,9 +22,9 @@ int vozvedeniyStepeny(int a, int b)
 return c;
 }
 
-int numberA = getDataFromUser("Введите целое число A: ");
+int numberA = GetDataFromUser("Введите целое число A: ");
 Console.WriteLine($" Число А равно: {numberA}");
-int numberB = getDataFromUser("Введите целое число B: ");
+int numberB = GetDataFromUser("Введите целое число B: ");
 Console.WriteLine($" Число B равно: {numberB}");
-int stepen = vozvedeniyStepeny(numberA,numberB );
+int stepen = VozvedeniyStepeny(numberA,numberB );
 Console.WriteLine($" Число А возведенное в степень B равно: {stepen}");
