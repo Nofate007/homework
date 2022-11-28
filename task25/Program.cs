@@ -25,6 +25,6 @@ return c;
 int numberA = getDataFromUser("Введите целое число A: ");
 Console.WriteLine($" Число А равно: {numberA}");
 int numberB = getDataFromUser("Введите целое число B: ");
-Console.WriteLine($" Число И равно: {numberB}");
+Console.WriteLine($" Число B равно: {numberB}");
 int stepen = vozvedeniyStepeny(numberA,numberB );
 Console.WriteLine($" Число А возведенное в степень B равно: {stepen}");
