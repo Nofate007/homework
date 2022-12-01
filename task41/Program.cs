@@ -43,7 +43,7 @@ int GetPlusElement(int[]array)
 return sum; 
 }
 int userNumber = GetDataFromUser("Введите число M вводимых элементов : ");
-int [] userArray = InputUserArray(userNumber,-99, 100);
+int [] userArray = InputUserArray(userNumber,-999, 1000);
 Console.WriteLine();            
 PrintArray(userArray);
 int plusElement = GetPlusElement(userArray);
